@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.scroll').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
+
 const wrapper = document.querySelector('.wrapper');
 const container= document.querySelector('.container');
 const loginlink = document.querySelector('.login-link');
@@ -22,3 +28,4 @@ iconclose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-popup');
     container.classList.remove('container-extra');
 });
+

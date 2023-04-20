@@ -152,7 +152,7 @@ html {
   color: #162918;
 }
 
-.container{
+.container {
   top: 12vh;
   /* left: 50vw; */
   height: 100vh;
@@ -165,10 +165,12 @@ html {
   position: fixed;
   z-index: 99;
 }
-.container-extra{
+
+.container-extra {
   backdrop-filter: blur(20px);
-  transition: .18s ease;
+  transition: 0.18s ease;
 }
+
 .wrapper {
   /* position: absolute; */
   z-index: 9;
@@ -184,7 +186,7 @@ html {
   align-items: center;
   overflow: hidden;
   transform: scale(0);
-  transition: transform .5s ease,height .2s ease;
+  transition: transform 0.5s ease, height 0.2s ease;
 }
 
 .wrapper.active {
@@ -207,12 +209,12 @@ html {
   z-index: 1;
 }
 
-.wrapper .form-box.login{
-  transition: transform .18s ease;
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
   transform: translateX(0);
 }
 
-.wrapper.active .form-box.login{
+.wrapper.active .form-box.login {
   transition: none;
   transform: translateX(-400px);
 }
@@ -223,12 +225,12 @@ html {
   transform: translateX(400px);
 }
 
-.wrapper.active .form-box.register{
-  transition: transform .18s ease;
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
   transform: translateX(0);
 }
 
-.wrapper.active-popup{
+.wrapper.active-popup {
   transform: scale(1);
 }
 
@@ -359,7 +361,6 @@ html {
   text-decoration: underline;
 }
 
-
 @keyframes rolling {
   0% {
     left: -1000px;
@@ -372,4 +373,21 @@ html {
   100% {
     left: -1000px;
   }
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #262626;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #262626;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #262626;
+  background-image: -webkit-gradient(linear,40% 0%,75% 84%,from(#ED6030),to(#EC4E57),color-stop(0.6, #f08c29));
 }
