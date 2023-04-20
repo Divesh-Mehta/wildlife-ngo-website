@@ -1,8 +1,3 @@
-$(document).ready(function () {
-    if (!$.browser.webkit) {
-        $('.scroll').html('<p>Sorry! Non webkit users. :(</p>');
-    }
-});
 
 const wrapper = document.querySelector('.wrapper');
 const container= document.querySelector('.container');
@@ -29,3 +24,9 @@ iconclose.addEventListener('click', ()=>{
     container.classList.remove('container-extra');
 });
 
+
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.scroll').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
