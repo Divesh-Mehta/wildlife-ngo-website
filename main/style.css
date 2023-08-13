@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 99;
   background: rgba(29, 28, 28, 0.442);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(4.75px);
@@ -237,7 +237,7 @@ html {
   height: 45px;
   background: transparent;
   font-size: 2em;
-  color: azure;
+  color: var(--color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,7 +346,7 @@ html {
 }
 
 .remember-forget label input {
-  accent-color: #162938;
+  accent-color: var(--color);
   margin-right: 3px;
 }
 
